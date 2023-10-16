@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='payment_term_id']" position="after">
-                <field name='test_field'/>
+                <field name='test_field' placeholder="Your test text here!" force_save="1" help="Max length 50 characters!"/>
                 <field name='responsible_for_issuing'/>
             </xpath>
         </field>
